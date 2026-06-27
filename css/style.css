@@ -25,6 +25,14 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
+.hero-logo {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    margin: 0 auto 24px;
+}
+
 h1 {
     color: #5ea39a;
     margin-bottom: 10px;
