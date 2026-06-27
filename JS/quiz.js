@@ -4,9 +4,13 @@ const quizFeedback = document.getElementById("quizFeedback");
 const newQuestionButton = document.getElementById("newQuestion");
 
 let correctWord;
+let quizDeck = [];
+
+function resetQuizDeck() {
+    quizDeck = [...words].sort(() => Math.random() - 0.5);
+}
 
 function generateQuiz() {
-
     if (words.length < 4) {
         quizQuestion.textContent = "Not enough words to generate a quiz.";
         return;
@@ -14,24 +18,32 @@ function generateQuiz() {
 
     quizFeedback.textContent = "";
 
-    const shuffled = [...words].sort(() => Math.random() - 0.5);
+    if (quizDeck.length === 0) {
+        resetQuizDeck();
+    }
 
-    const options = shuffled.slice(0, 4);
+    correctWord = quizDeck.pop();
 
-    correctWord = options[Math.floor(Math.random() * options.length)];
+    const wrongOptions = words
+        .filter(function (word) {
+            return word.id !== correctWord.id;
+        })
+        .sort(() => Math.random() - 0.5)
+        .slice(0, 3);
+
+    const options = [correctWord, ...wrongOptions]
+        .sort(() => Math.random() - 0.5);
 
     quizQuestion.textContent = correctWord.definition;
 
     quizOptions.innerHTML = "";
 
-    options.forEach(function(word) {
-
+    options.forEach(function (word) {
         const button = document.createElement("button");
 
         button.textContent = word.word;
 
         button.addEventListener("click", function () {
-
             const optionButtons = quizOptions.querySelectorAll("button");
 
             if (word.id === correctWord.id) {
@@ -40,7 +52,6 @@ function generateQuiz() {
 
                 correctAnswers++;
                 updateStatistics();
-
             } else {
                 quizFeedback.textContent =
                     `❌ Incorrect. The answer was "${correctWord.word}".`;
@@ -60,13 +71,10 @@ function generateQuiz() {
             optionButtons.forEach(function (btn) {
                 btn.disabled = true;
             });
-
-    });
+        });
 
         quizOptions.appendChild(button);
-
     });
-
 }
 
 newQuestionButton.addEventListener("click", generateQuiz);
