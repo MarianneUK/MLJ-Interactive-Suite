@@ -1,107 +1,94 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MLJ Interactive Learning Suite</title>
+<title>MLJ Interactive Learning Suite</title>
 
-    <link rel="stylesheet"
-          href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
+```
 
 </head>
 
 <body>
 
-    <div class="container">
+```
+<div class="container">
+
     <section class="hero">
+        <p class="eyebrow">My Language Journey</p>
 
-    <h1>MLJ Interactive Learning Suite</h1>
+        <h1>MLJ Interactive Learning Suite</h1>
 
-    <div class="topic-control">
+        <p class="hero-text">
+            Learn English through interactive vocabulary, grammar, listening and culture activities.
+        </p>
+    </section>
 
-        <label for="topicSelect">
-            Vocabulary Topic
-        </label>
+    <section class="activity-grid">
 
-        <select id="topicSelect">
-        </select>
+        <div class="activity-card">
+            <div class="activity-icon">📖</div>
 
-    </div>
+            <h2>Vocabulary</h2>
 
-    <h2>Word of the Moment</h2>
+            <p>
+                Practise useful English words with quizzes, examples and statistics.
+            </p>
 
-    <div class="card">
+            <button>Launch</button>
+        </div>
 
-    <h3 id="word">Generous</h3>
+        <div class="activity-card coming-soon">
+            <div class="activity-icon">📝</div>
 
-    <p id="pronunciation">/ˈdʒenərəs/</p>
+            <h2>Grammar</h2>
 
-    <p id="wordMeta">
-        adjective · B1 · values
-    </p>
+            <p>
+                Build confidence with tenses, articles, prepositions and sentence practice.
+            </p>
 
-    <p id="definition">
-        Kind and willing to give or share.
-    </p>
+            <button disabled>Coming Soon</button>
+        </div>
 
-    <div class="example-box">
-        <h4>Example</h4>
-        <p id="example">She was very generous with her time.</p>
-    </div>
+        <div class="activity-card coming-soon">
+            <div class="activity-icon">🎧</div>
 
-    <div class="word-lists">
-        <p><strong>Synonyms:</strong> <span id="synonyms">kind, giving</span></p>
-        <p><strong>Antonyms:</strong> <span id="antonyms">selfish, mean</span></p>
-    </div>
+            <h2>Listening</h2>
 
-    <button id="nextWord">
-        Next Word
-    </button>
+            <p>
+                Improve listening skills through pronunciation and audio-based activities.
+            </p>
 
-    </div>
+            <button disabled>Coming Soon</button>
+        </div>
 
-        </section>
+        <div class="activity-card coming-soon">
+            <div class="activity-icon">🇬🇧</div>
 
-        <section class="quiz-section">
+            <h2>British Culture</h2>
 
-        <h2>Quick Quiz</h2>
+            <p>
+                Explore British life, expressions, measurements and Cambridge culture.
+            </p>
 
-        <p id="quizQuestion">Question will appear here.</p>
-
-        <div id="quizOptions"></div>
-
-        <p id="quizFeedback"></p>
-
-        <button id="newQuestion">New Question</button>
-        <button id="reset-stats-button">Reset Stats</button>
-
-        </section>
-
-    </div>
-
-    <section class="stats-section">
-
-        <h2>Learning Statistics</h2>
-
-        <p>Words viewed: <span id="wordsViewed">0</span></p>
-
-        <p>Correct answers: <span id="correctAnswers">0</span></p>
-
-        <p>Incorrect answers: <span id="incorrectAnswers">0</span></p>
-
-        <p>Accuracy: <span id="accuracy">0%</span></p>
+            <button disabled>Coming Soon</button>
+        </div>
 
     </section>
+
+</div>
 
 <script src="js/ui.js"></script>
 <script src="js/stats.js"></script>
 <script src="js/vocabulary.js"></script>
 <script src="js/quiz.js"></script>
+```
 
 </body>
 
