@@ -8,24 +8,59 @@ const wordMetaElement = document.getElementById("wordMeta");
 const exampleElement = document.getElementById("example");
 const synonymsElement = document.getElementById("synonyms");
 const antonymsElement = document.getElementById("antonyms");
+const topicSelect = document.getElementById("topicSelect");
 
-function displayWord(wordData) {
-    wordElement.textContent = wordData.word;
-    pronunciationElement.textContent = wordData.pronunciation;
-    wordMetaElement.textContent = `${wordData.partOfSpeech} · ${wordData.level} · ${wordData.topic}`;
-    definitionElement.textContent = wordData.definition;
-    exampleElement.textContent = wordData.example;
-    synonymsElement.textContent = wordData.synonyms.join(", ");
-    antonymsElement.textContent = wordData.antonyms.join(", ");
+function loadVocabulary(topic) {
+
+    fetch(`data/vocabulary/${topic}.json`)
+
+        .then(function (response) {
+            return response.json();
+        })
+
+        .then(function (data) {
+
+            words = data.entries;
+            previousIndex = 0;
+            displayWord(words[previousIndex]);
+        });
+
 }
 
-fetch("data/vocabulary/values.json")
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-        words = data;
-    });
+function loadTopics() {
+
+    fetch("data/vocabulary/index.json")
+
+        .then(function (response) {
+            return response.json();
+        })
+
+        .then(function (topics) {
+
+            topicSelect.innerHTML = "";
+
+            topics.forEach(function (topic) {
+
+                const option = document.createElement("option");
+
+                option.value = topic.id;
+                option.textContent = topic.name;
+
+                topicSelect.appendChild(option);
+
+            });
+
+            loadVocabulary(topicSelect.value);
+
+        });
+
+}
+
+loadTopics();
+
+topicSelect.addEventListener("change", function () {
+    loadVocabulary(topicSelect.value);
+});
 
 button.addEventListener("click", function () {
     if (words.length === 0) {

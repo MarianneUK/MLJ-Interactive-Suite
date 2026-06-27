@@ -1,0 +1,128 @@
+{
+    "title": "Work",
+    "description": "Vocabulary related to jobs and the workplace.",
+    "level": "A2-B1",
+    "type": "vocabulary",
+    "entries": [
+        {
+            "id": 1,
+            "word": "Employee",
+            "definition": "A person who works for a company or organisation.",
+            "level": "A2",
+            "topic": "work",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ɪmˈplɔɪiː/",
+            "example": "Every employee attended the meeting.",
+            "synonyms": ["worker", "staff member"],
+            "antonyms": ["employer", "manager"]
+        },
+        {
+            "id": 2,
+            "word": "Employer",
+            "definition": "A person or company that gives people work.",
+            "level": "A2",
+            "topic": "work",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ɪmˈplɔɪə/",
+            "example": "She has worked for the same employer for five years.",
+            "synonyms": ["boss", "company"],
+            "antonyms": ["employee", "worker"]
+        },
+        {
+            "id": 3,
+            "word": "Salary",
+            "definition": "Money that someone receives regularly for doing a job.",
+            "level": "B1",
+            "topic": "work",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˈsæləri/",
+            "example": "His salary increased this year.",
+            "synonyms": ["pay", "income"],
+            "antonyms": ["debt", "expense"]
+        },
+        {
+            "id": 4,
+            "word": "Deadline",
+            "definition": "The latest time by which something must be completed.",
+            "level": "B1",
+            "topic": "work",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˈdedlaɪn/",
+            "example": "We must finish the project before the deadline.",
+            "synonyms": ["due date", "time limit"],
+            "antonyms": ["extension", "delay"]
+        },
+        {
+            "id": 5,
+            "word": "Meeting",
+            "definition": "An occasion when people come together to discuss work.",
+            "level": "A2",
+            "topic": "work",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˈmiːtɪŋ/",
+            "example": "The weekly meeting starts at nine.",
+            "synonyms": ["discussion", "conference"],
+            "antonyms": ["break", "holiday"]
+        },
+        {
+            "id": 6,
+            "word": "Promotion",
+            "definition": "Moving to a higher position at work.",
+            "level": "B1",
+            "topic": "work",
+            "partOfSpeech": "noun",
+            "pronunciation": "/prəˈməʊʃən/",
+            "example": "She received a promotion after two years.",
+            "synonyms": ["advancement", "rise"],
+            "antonyms": ["demotion", "dismissal"]
+        },
+        {
+            "id": 7,
+            "word": "Colleague",
+            "definition": "Someone you work with.",
+            "level": "A2",
+            "topic": "work",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˈkɒliːɡ/",
+            "example": "My colleagues organised a surprise lunch.",
+            "synonyms": ["co-worker", "teammate"],
+            "antonyms": ["competitor", "opponent"]
+        },
+        {
+            "id": 8,
+            "word": "Reliable",
+            "definition": "Someone who can be trusted to do their work well.",
+            "level": "B1",
+            "topic": "work",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/rɪˈlaɪəbl/",
+            "example": "She is one of our most reliable employees.",
+            "synonyms": ["dependable", "trustworthy"],
+            "antonyms": ["unreliable", "careless"]
+        },
+        {
+            "id": 9,
+            "word": "Resign",
+            "definition": "To leave your job voluntarily.",
+            "level": "B1",
+            "topic": "work",
+            "partOfSpeech": "verb",
+            "pronunciation": "/rɪˈzaɪn/",
+            "example": "He decided to resign and start his own business.",
+            "synonyms": ["quit", "leave"],
+            "antonyms": ["stay", "remain"]
+        },
+        {
+            "id": 10,
+            "word": "Experience",
+            "definition": "Knowledge or skill gained from doing a job.",
+            "level": "B1",
+            "topic": "work",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ɪkˈspɪəriəns/",
+            "example": "Teaching experience is useful for this role.",
+            "synonyms": ["knowledge", "practice"],
+            "antonyms": ["inexperience", "ignorance"]
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "title": "Emotions",
+    "description": "Vocabulary for describing feelings and emotional states.",
+    "level": "A2-B1",
+    "type": "vocabulary",
+    "entries": [
+        {
+            "id": 1,
+            "word": "Happy",
+            "definition": "Feeling pleased or glad.",
+            "level": "A1",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/ˈhæpi/",
+            "example": "She felt happy after passing her exam.",
+            "synonyms": ["pleased", "glad"],
+            "antonyms": ["sad", "unhappy"]
+        },
+        {
+            "id": 2,
+            "word": "Worried",
+            "definition": "Feeling nervous because something bad might happen.",
+            "level": "A2",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/ˈwʌrid/",
+            "example": "He was worried about the interview.",
+            "synonyms": ["anxious", "concerned"],
+            "antonyms": ["calm", "relaxed"]
+        },
+        {
+            "id": 3,
+            "word": "Excited",
+            "definition": "Feeling very happy and enthusiastic about something.",
+            "level": "A2",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/ɪkˈsaɪtɪd/",
+            "example": "The students were excited about the trip.",
+            "synonyms": ["enthusiastic", "thrilled"],
+            "antonyms": ["bored", "uninterested"]
+        },
+        {
+            "id": 4,
+            "word": "Confused",
+            "definition": "Unable to understand something clearly.",
+            "level": "A2",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/kənˈfjuːzd/",
+            "example": "I was confused by the instructions.",
+            "synonyms": ["uncertain", "puzzled"],
+            "antonyms": ["clear", "certain"]
+        },
+        {
+            "id": 5,
+            "word": "Proud",
+            "definition": "Feeling pleased because of something you have done.",
+            "level": "B1",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/praʊd/",
+            "example": "She felt proud of her progress.",
+            "synonyms": ["pleased", "satisfied"],
+            "antonyms": ["ashamed", "embarrassed"]
+        },
+        {
+            "id": 6,
+            "word": "Lonely",
+            "definition": "Unhappy because you are alone or feel separate from others.",
+            "level": "A2",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/ˈləʊnli/",
+            "example": "He felt lonely after moving to a new city.",
+            "synonyms": ["alone", "isolated"],
+            "antonyms": ["connected", "included"]
+        },
+        {
+            "id": 7,
+            "word": "Calm",
+            "definition": "Relaxed and not worried or angry.",
+            "level": "A2",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/kɑːm/",
+            "example": "Try to stay calm before the test.",
+            "synonyms": ["relaxed", "peaceful"],
+            "antonyms": ["anxious", "angry"]
+        },
+        {
+            "id": 8,
+            "word": "Embarrassed",
+            "definition": "Feeling uncomfortable because of something awkward.",
+            "level": "B1",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/ɪmˈbærəst/",
+            "example": "She felt embarrassed when she forgot his name.",
+            "synonyms": ["awkward", "ashamed"],
+            "antonyms": ["confident", "comfortable"]
+        },
+        {
+            "id": 9,
+            "word": "Frustrated",
+            "definition": "Annoyed because you cannot do or change something.",
+            "level": "B1",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/frʌˈstreɪtɪd/",
+            "example": "He felt frustrated when the app did not work.",
+            "synonyms": ["annoyed", "irritated"],
+            "antonyms": ["satisfied", "pleased"]
+        },
+        {
+            "id": 10,
+            "word": "Relieved",
+            "definition": "Happy because something difficult or worrying has ended.",
+            "level": "B1",
+            "topic": "emotions",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/rɪˈliːvd/",
+            "example": "I was relieved when I found my keys.",
+            "synonyms": ["reassured", "comforted"],
+            "antonyms": ["worried", "anxious"]
+        }
+    ]
+}

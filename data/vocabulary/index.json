@@ -1,0 +1,22 @@
+[
+    {
+        "id": "values",
+        "name": "Values"
+    },
+    {
+        "id": "travel",
+        "name": "Travel"
+    },
+    {
+        "id": "food",
+        "name": "Food"
+    },
+    {
+        "id": "work",
+        "name": "Work"
+    },
+    {
+        "id": "emotions",
+        "name": "Emotions"
+    }
+]

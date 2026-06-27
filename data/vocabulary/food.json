@@ -1,0 +1,128 @@
+{
+    "title": "Food",
+    "description": "Vocabulary related to food, cooking and eating.",
+    "level": "A2-B1",
+    "type": "vocabulary",
+    "entries": [
+        {
+            "id": 1,
+            "word": "Recipe",
+            "definition": "A set of instructions for preparing a dish.",
+            "level": "A2",
+            "topic": "food",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˈresəpi/",
+            "example": "My grandmother gave me her favourite cake recipe.",
+            "synonyms": ["instructions", "formula"],
+            "antonyms": ["improvisation", "guesswork"]
+        },
+        {
+            "id": 2,
+            "word": "Bake",
+            "definition": "To cook food in an oven.",
+            "level": "A2",
+            "topic": "food",
+            "partOfSpeech": "verb",
+            "pronunciation": "/beɪk/",
+            "example": "We baked a chocolate cake yesterday.",
+            "synonyms": ["cook", "roast"],
+            "antonyms": ["freeze", "chill"]
+        },
+        {
+            "id": 3,
+            "word": "Fresh",
+            "definition": "Recently made, picked or prepared.",
+            "level": "A2",
+            "topic": "food",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/freʃ/",
+            "example": "The market sells fresh vegetables every morning.",
+            "synonyms": ["new", "crisp"],
+            "antonyms": ["stale", "old"]
+        },
+        {
+            "id": 4,
+            "word": "Spicy",
+            "definition": "Having a strong hot flavour from spices.",
+            "level": "A2",
+            "topic": "food",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/ˈspaɪsi/",
+            "example": "The curry was too spicy for me.",
+            "synonyms": ["hot", "peppery"],
+            "antonyms": ["mild", "bland"]
+        },
+        {
+            "id": 5,
+            "word": "Ingredient",
+            "definition": "One of the foods used to make a dish.",
+            "level": "B1",
+            "topic": "food",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ɪnˈɡriːdiənt/",
+            "example": "Flour is the main ingredient in bread.",
+            "synonyms": ["component", "element"],
+            "antonyms": ["finished product", "meal"]
+        },
+        {
+            "id": 6,
+            "word": "Delicious",
+            "definition": "Having a very pleasant taste.",
+            "level": "A2",
+            "topic": "food",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/dɪˈlɪʃəs/",
+            "example": "The soup was absolutely delicious.",
+            "synonyms": ["tasty", "flavourful"],
+            "antonyms": ["disgusting", "awful"]
+        },
+        {
+            "id": 7,
+            "word": "Serve",
+            "definition": "To give food to someone at a meal.",
+            "level": "A2",
+            "topic": "food",
+            "partOfSpeech": "verb",
+            "pronunciation": "/sɜːv/",
+            "example": "Dinner is served at seven o'clock.",
+            "synonyms": ["offer", "provide"],
+            "antonyms": ["withhold", "remove"]
+        },
+        {
+            "id": 8,
+            "word": "Hungry",
+            "definition": "Wanting or needing food.",
+            "level": "A1",
+            "topic": "food",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/ˈhʌŋɡri/",
+            "example": "I'm hungry after the long walk.",
+            "synonyms": ["starving", "peckish"],
+            "antonyms": ["full", "satisfied"]
+        },
+        {
+            "id": 9,
+            "word": "Healthy",
+            "definition": "Good for your body and well-being.",
+            "level": "A2",
+            "topic": "food",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/ˈhelθi/",
+            "example": "Fruit is a healthy snack.",
+            "synonyms": ["nutritious", "wholesome"],
+            "antonyms": ["unhealthy", "junk"]
+        },
+        {
+            "id": 10,
+            "word": "Taste",
+            "definition": "To have a particular flavour.",
+            "level": "A2",
+            "topic": "food",
+            "partOfSpeech": "verb",
+            "pronunciation": "/teɪst/",
+            "example": "This pasta tastes amazing.",
+            "synonyms": ["flavour", "sample"],
+            "antonyms": ["ignore", "avoid"]
+        }
+    ]
+}

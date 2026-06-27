@@ -1,0 +1,128 @@
+{
+    "title": "Travel",
+    "description": "Vocabulary for journeys, transport and holidays.",
+    "level": "A2-B1",
+    "type": "vocabulary",
+    "entries": [
+        {
+            "id": 1,
+            "word": "Journey",
+            "definition": "The act of travelling from one place to another.",
+            "level": "A2",
+            "topic": "travel",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˈdʒɜːni/",
+            "example": "The journey from Cambridge to London takes about an hour by train.",
+            "synonyms": ["trip", "travel"],
+            "antonyms": ["arrival", "stay"]
+        },
+        {
+            "id": 2,
+            "word": "Destination",
+            "definition": "The place where someone is going.",
+            "level": "B1",
+            "topic": "travel",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˌdestɪˈneɪʃən/",
+            "example": "Paris is a popular destination for tourists.",
+            "synonyms": ["place", "location"],
+            "antonyms": ["starting point", "departure"]
+        },
+        {
+            "id": 3,
+            "word": "Luggage",
+            "definition": "The bags and cases you take when you travel.",
+            "level": "A2",
+            "topic": "travel",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˈlʌɡɪdʒ/",
+            "example": "She left her luggage at the hotel.",
+            "synonyms": ["bags", "suitcases"],
+            "antonyms": ["hand luggage", "empty hands"]
+        },
+        {
+            "id": 4,
+            "word": "Departure",
+            "definition": "The time when a person or vehicle leaves.",
+            "level": "B1",
+            "topic": "travel",
+            "partOfSpeech": "noun",
+            "pronunciation": "/dɪˈpɑːtʃə/",
+            "example": "The departure time is 8:30 in the morning.",
+            "synonyms": ["leaving", "exit"],
+            "antonyms": ["arrival", "return"]
+        },
+        {
+            "id": 5,
+            "word": "Arrival",
+            "definition": "The act of reaching a place.",
+            "level": "A2",
+            "topic": "travel",
+            "partOfSpeech": "noun",
+            "pronunciation": "/əˈraɪvəl/",
+            "example": "Our arrival in Cambridge was delayed.",
+            "synonyms": ["coming", "reaching"],
+            "antonyms": ["departure", "leaving"]
+        },
+        {
+            "id": 6,
+            "word": "Accommodation",
+            "definition": "A place where you stay, such as a hotel or flat.",
+            "level": "B1",
+            "topic": "travel",
+            "partOfSpeech": "noun",
+            "pronunciation": "/əˌkɒməˈdeɪʃən/",
+            "example": "We booked accommodation near the city centre.",
+            "synonyms": ["lodging", "place to stay"],
+            "antonyms": ["homelessness", "no vacancy"]
+        },
+        {
+            "id": 7,
+            "word": "Explore",
+            "definition": "To travel around a place to learn about it.",
+            "level": "B1",
+            "topic": "travel",
+            "partOfSpeech": "verb",
+            "pronunciation": "/ɪkˈsplɔː/",
+            "example": "We spent the afternoon exploring Cambridge.",
+            "synonyms": ["discover", "investigate"],
+            "antonyms": ["ignore", "avoid"]
+        },
+        {
+            "id": 8,
+            "word": "Map",
+            "definition": "A drawing or image that shows where places are.",
+            "level": "A1",
+            "topic": "travel",
+            "partOfSpeech": "noun",
+            "pronunciation": "/mæp/",
+            "example": "Can you show me the station on the map?",
+            "synonyms": ["plan", "guide"],
+            "antonyms": ["confusion", "guesswork"]
+        },
+        {
+            "id": 9,
+            "word": "Delayed",
+            "definition": "Happening later than planned.",
+            "level": "B1",
+            "topic": "travel",
+            "partOfSpeech": "adjective",
+            "pronunciation": "/dɪˈleɪd/",
+            "example": "The train was delayed because of bad weather.",
+            "synonyms": ["late", "postponed"],
+            "antonyms": ["on time", "early"]
+        },
+        {
+            "id": 10,
+            "word": "Ticket",
+            "definition": "A small document that shows you have paid for a journey or event.",
+            "level": "A1",
+            "topic": "travel",
+            "partOfSpeech": "noun",
+            "pronunciation": "/ˈtɪkɪt/",
+            "example": "I bought my train ticket online.",
+            "synonyms": ["pass", "fare"],
+            "antonyms": ["fine", "penalty"]
+        }
+    ]
+}
