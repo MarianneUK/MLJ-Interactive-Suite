@@ -1,32 +1,122 @@
 [
     {
+        "id": 1,
         "word": "Generous",
         "definition": "Kind and willing to give or share.",
-        "level": "B1 Vocabulary"
+        "level": "B1",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/ˈdʒenərəs/",
+        "example": "She was very generous with her time.",
+        "synonyms": ["kind", "giving"],
+        "antonyms": ["selfish", "mean"]
     },
     {
-        "word": "Greedy",
-        "definition": "Wanting more money, food or power than you need.",
-        "level": "B1 Vocabulary"
-    },
-    {
-        "word": "Fairness",
-        "definition": "The quality of treating people equally and in a reasonable way.",
-        "level": "B2 Vocabulary"
-    },
-    {
+        "id": 2,
         "word": "Honest",
         "definition": "Always telling the truth.",
-        "level": "A2 Vocabulary"
+        "level": "A2",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/ˈɒnɪst/",
+        "example": "People trust him because he is honest.",
+        "synonyms": ["truthful", "sincere"],
+        "antonyms": ["dishonest", "deceitful"]
     },
     {
-        "word": "Brave",
-        "definition": "Showing courage in difficult situations.",
-        "level": "B1 Vocabulary"
-    },
-    {
+        "id": 3,
         "word": "Patient",
-        "definition": "Able to wait calmly without getting angry.",
-        "level": "B1 Vocabulary"
+        "definition": "Able to stay calm while waiting or dealing with difficulties.",
+        "level": "B1",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/ˈpeɪʃənt/",
+        "example": "Good teachers are patient with their students.",
+        "synonyms": ["calm", "tolerant"],
+        "antonyms": ["impatient", "restless"]
+    },
+    {
+        "id": 4,
+        "word": "Brave",
+        "definition": "Showing courage in difficult or dangerous situations.",
+        "level": "B1",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/breɪv/",
+        "example": "The firefighter was brave during the rescue.",
+        "synonyms": ["courageous", "bold"],
+        "antonyms": ["cowardly", "fearful"]
+    },
+    {
+        "id": 5,
+        "word": "Fair",
+        "definition": "Treating everyone equally and in a reasonable way.",
+        "level": "B1",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/feə(r)/",
+        "example": "A good teacher should be fair to every student.",
+        "synonyms": ["just", "impartial"],
+        "antonyms": ["unfair", "biased"]
+    },
+    {
+        "id": 6,
+        "word": "Kind",
+        "definition": "Friendly, caring and helpful towards other people.",
+        "level": "A2",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/kaɪnd/",
+        "example": "She was very kind to the new student.",
+        "synonyms": ["caring", "thoughtful"],
+        "antonyms": ["unkind", "cruel"]
+    },
+    {
+        "id": 7,
+        "word": "Respectful",
+        "definition": "Showing politeness and consideration for other people.",
+        "level": "B1",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/rɪˈspektfəl/",
+        "example": "The children were respectful during the visit.",
+        "synonyms": ["polite", "courteous"],
+        "antonyms": ["rude", "disrespectful"]
+    },
+    {
+        "id": 8,
+        "word": "Responsible",
+        "definition": "Reliable and able to make good decisions.",
+        "level": "B1",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/rɪˈspɒnsəbl/",
+        "example": "He is responsible for looking after the class keys.",
+        "synonyms": ["reliable", "dependable"],
+        "antonyms": ["careless", "irresponsible"]
+    },
+    {
+        "id": 9,
+        "word": "Selfish",
+        "definition": "Caring only about yourself and not about other people.",
+        "level": "B1",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/ˈselfɪʃ/",
+        "example": "It was selfish to eat all the cake.",
+        "synonyms": ["self-centred", "egotistical"],
+        "antonyms": ["generous", "selfless"]
+    },
+    {
+        "id": 10,
+        "word": "Greedy",
+        "definition": "Wanting more money, food or possessions than you need.",
+        "level": "B1",
+        "topic": "values",
+        "partOfSpeech": "adjective",
+        "pronunciation": "/ˈɡriːdi/",
+        "example": "The greedy character wanted all the treasure.",
+        "synonyms": ["avaricious", "grasping"],
+        "antonyms": ["generous", "content"]
     }
 ]

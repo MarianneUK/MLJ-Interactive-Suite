@@ -3,6 +3,21 @@ const wordElement = document.getElementById("word");
 const definitionElement = document.getElementById("definition");
 const levelElement = document.getElementById("level");
 const button = document.getElementById("nextWord");
+const pronunciationElement = document.getElementById("pronunciation");
+const wordMetaElement = document.getElementById("wordMeta");
+const exampleElement = document.getElementById("example");
+const synonymsElement = document.getElementById("synonyms");
+const antonymsElement = document.getElementById("antonyms");
+
+function displayWord(wordData) {
+    wordElement.textContent = wordData.word;
+    pronunciationElement.textContent = wordData.pronunciation;
+    wordMetaElement.textContent = `${wordData.partOfSpeech} · ${wordData.level} · ${wordData.topic}`;
+    definitionElement.textContent = wordData.definition;
+    exampleElement.textContent = wordData.example;
+    synonymsElement.textContent = wordData.synonyms.join(", ");
+    antonymsElement.textContent = wordData.antonyms.join(", ");
+}
 
 fetch("data/vocabulary/values.json")
     .then(function (response) {
@@ -30,9 +45,7 @@ button.addEventListener("click", function () {
 
         const randomWord = words[randomIndex];
 
-        wordElement.textContent = randomWord.word;
-        definitionElement.textContent = randomWord.definition;
-        levelElement.textContent = randomWord.level;
+        displayWord(randomWord);
 
         document.querySelector(".card").classList.remove("fade");
     }, 300);
