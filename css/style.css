@@ -8,6 +8,8 @@ body {
 .container {
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -108,4 +110,25 @@ button {
 
 button:hover {
     background: #1f3550;
+}
+
+.quiz-section {
+    background: white;
+    max-width: 520px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+#quizOptions button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#quizFeedback {
+    font-weight: bold;
+    margin-top: 20px;
 }
