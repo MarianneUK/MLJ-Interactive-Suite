@@ -126,9 +126,46 @@ button:hover {
     display: block;
     width: 100%;
     margin: 10px 0;
+    transition: .25s;
+}
+
+#quizOptions button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,.15);
+}
+
+#quizOptions button.correct {
+    background: #4caf50;
+}
+
+#quizOptions button.incorrect {
+    background: #d9534f;
+}
+
+#quizOptions button:disabled {
+    cursor: not-allowed;
+    opacity: 0.85;
 }
 
 #quizFeedback {
     font-weight: bold;
     margin-top: 20px;
+}
+
+.stats-section {
+    background: white;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    text-align: center;
+}
+
+.stats-section h2 {
+    margin-bottom: 20px;
+}
+
+.stats-section p {
+    margin: 10px 0;
+    font-size: 1.05rem;
 }

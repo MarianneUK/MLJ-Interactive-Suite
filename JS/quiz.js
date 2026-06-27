@@ -32,18 +32,36 @@ function generateQuiz() {
 
         button.addEventListener("click", function () {
 
-            if (word.id === correctWord.id) {
+            const optionButtons = quizOptions.querySelectorAll("button");
 
+            if (word.id === correctWord.id) {
                 quizFeedback.textContent = "✅ Correct!";
+                button.classList.add("correct");
+
+                correctAnswers++;
+                updateStatistics();
 
             } else {
-
                 quizFeedback.textContent =
                     `❌ Incorrect. The answer was "${correctWord.word}".`;
 
+                button.classList.add("incorrect");
+
+                incorrectAnswers++;
+                updateStatistics();
+
+                optionButtons.forEach(function (btn) {
+                    if (btn.textContent === correctWord.word) {
+                        btn.classList.add("correct");
+                    }
+                });
             }
 
-        });
+            optionButtons.forEach(function (btn) {
+                btn.disabled = true;
+            });
+
+    });
 
         quizOptions.appendChild(button);
 

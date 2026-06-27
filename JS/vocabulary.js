@@ -23,6 +23,11 @@ function loadVocabulary(topic) {
             words = data.entries;
             previousIndex = 0;
             displayWord(words[previousIndex]);
+
+            wordsViewed++;
+            updateStatistics();
+
+            generateQuiz();
         });
 
 }
@@ -81,6 +86,9 @@ button.addEventListener("click", function () {
         const randomWord = words[randomIndex];
 
         displayWord(randomWord);
+
+        wordsViewed++;
+        updateStatistics();
 
         document.querySelector(".card").classList.remove("fade");
     }, 300);
