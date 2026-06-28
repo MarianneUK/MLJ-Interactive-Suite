@@ -12,6 +12,7 @@ const exampleElement = document.getElementById("example");
 const synonymsElement = document.getElementById("synonyms");
 const antonymsElement = document.getElementById("antonyms");
 const topicSelect = document.getElementById("topicSelect");
+const card = document.querySelector(".card");
 
 function resetWordDeck() {
     wordDeck = [...words].sort(() => Math.random() - 0.5);
@@ -66,13 +67,11 @@ topicSelect.addEventListener("change", function () {
 });
 
 button.addEventListener("click", function () {
-    if (words.length === 0) {
-        return;
-    }
 
-    document.querySelector(".card").classList.add("fade");
+    card.classList.add("fade");
 
     setTimeout(function () {
+
         if (wordDeck.length === 0) {
             resetWordDeck();
         }
@@ -84,6 +83,7 @@ button.addEventListener("click", function () {
         wordsViewed++;
         updateStatistics();
 
-        document.querySelector(".card").classList.remove("fade");
-    }, 300);
+        card.classList.remove("fade");
+
+    }, 250);
 });

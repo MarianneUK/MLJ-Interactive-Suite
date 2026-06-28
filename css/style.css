@@ -261,8 +261,15 @@ button:disabled {
 }
 
 .fade {
-
     opacity: 0;
+    transform: translateY(8px);
+}
+
+.word-card,
+.quiz-section {
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
 }
 
 #word {
