@@ -36,6 +36,7 @@ function loadVocabulary(topic) {
             updateStatistics();
 
             generateQuiz();
+            generateMatchingGame();
         });
 }
 
