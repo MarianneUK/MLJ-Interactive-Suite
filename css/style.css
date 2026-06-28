@@ -1,28 +1,38 @@
+/* ======================================================
+   MLJ Interactive Learning Suite
+   Main Stylesheet
+====================================================== */
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #eef2f1;
-    color: #1f3550;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #EEF2F1;
+    color: #1F3550;
 }
 
+/* ======================================================
+   Layout
+====================================================== */
+
 .container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
+
+/* ======================================================
+   Hero
+====================================================== */
 
 .hero {
     background: white;
-    max-width: 520px;
-    width: 100%;
+    max-width: 620px;
+    margin: 0 auto;
     padding: 40px;
     border-radius: 16px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    box-sizing: border-box;
 }
 
 .hero-logo {
@@ -34,148 +44,14 @@ body {
 }
 
 h1 {
-    color: #5ea39a;
-    margin-bottom: 10px;
+    color: #5EA39A;
+    margin-bottom: 12px;
 }
 
-.topic-control {
-    margin: 20px 0 30px;
-}
-
-.topic-control label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #1f3550;
-}
-
-#topicSelect {
-    min-width: 180px;
-    padding: 10px 18px;
-    border-radius: 999px;
-    border: 2px solid #5ea39a;
-    background: white;
-    color: #1f3550;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-#topicSelect:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(94, 163, 154, 0.2);
-}
-
-h2 {
-    margin-bottom: 30px;
-}
-
-.card {
-    border: none;
-    border-radius: 14px;
-    padding: 30px;
-    margin-top: 20px;
-    transition: .3s;
-    min-height: 320px;
-}
-
-.fade {
-    opacity: 0;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-}
-
-#word {
-    font-size: 2rem;
-    color: #1f3550;
-    margin-bottom: 20px;
-}
-
-#definition {
-    font-size: 1.1rem;
+.hero-text {
+    max-width: 700px;
+    margin: 20px auto 0;
     line-height: 1.6;
-    min-height: 70px;
-}
-
-#level {
-    font-weight: bold;
-    color: #5ea39a;
-    margin-top: 20px;
-}
-
-button {
-    margin-top: 25px;
-    background: #5ea39a;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 999px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: .25s;
-}
-
-button:hover {
-    background: #1f3550;
-}
-
-.quiz-section {
-    background: white;
-    max-width: 520px;
-    width: 100%;
-    padding: 40px;
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-}
-
-#quizOptions button {
-    display: block;
-    width: 100%;
-    margin: 10px 0;
-    transition: .25s;
-}
-
-#quizOptions button:hover:not(:disabled) {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(0,0,0,.15);
-}
-
-#quizOptions button.correct {
-    background: #4caf50;
-}
-
-#quizOptions button.incorrect {
-    background: #d9534f;
-}
-
-#quizOptions button:disabled {
-    cursor: not-allowed;
-    opacity: 0.85;
-}
-
-#quizFeedback {
-    font-weight: bold;
-    margin-top: 20px;
-}
-
-.stats-section {
-    background: white;
-    margin-top: 30px;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 10px 30px rgba(0,0,0,.08);
-    text-align: center;
-}
-
-.stats-section h2 {
-    margin-bottom: 20px;
-}
-
-.stats-section p {
-    margin: 10px 0;
-    font-size: 1.05rem;
 }
 
 .eyebrow {
@@ -186,24 +62,22 @@ button:hover {
     text-transform: uppercase;
 }
 
-.hero-text {
-    max-width: 700px;
-    margin: 20px auto 0;
-}
+/* ======================================================
+   Homepage Activity Cards
+====================================================== */
 
 .activity-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .activity-card {
-    background-color: white;
+    background: white;
     border-radius: 18px;
     padding: 30px;
-    box-shadow: 0 10px 30px rgba(31, 53, 80, 0.08);
-    text-align: left;
+    box-shadow: 0 10px 30px rgba(31,53,80,.08);
 }
 
 .activity-icon {
@@ -217,36 +91,243 @@ button:hover {
 }
 
 .activity-card p {
-    text-align: left;
     font-size: 16px;
-    line-height: 1.5;
-}
-
-.activity-card button {
-    background-color: #5EA39A;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    padding: 12px 18px;
-    margin-top: 15px;
-    cursor: pointer;
-}
-
-.activity-card button:hover {
-    background-color: #1F3550;
-}
-
-.activity-card button:disabled {
-    background-color: #b8c7c4;
-    cursor: not-allowed;
+    line-height: 1.6;
 }
 
 .coming-soon {
-    opacity: 0.8;
+    opacity: .8;
 }
 
-@media (max-width: 700px) {
+/* ======================================================
+   Buttons
+====================================================== */
+
+button,
+.button-link {
+
+    display: inline-block;
+
+    background: #5EA39A;
+    color: white;
+
+    text-decoration: none;
+
+    border: none;
+    border-radius: 10px;
+
+    padding: 12px 22px;
+
+    margin-top: 20px;
+
+    cursor: pointer;
+
+    transition: .25s;
+}
+
+button:hover,
+.button-link:hover {
+
+    background: #1F3550;
+}
+
+button:disabled {
+
+    background: #B8C7C4;
+    cursor: not-allowed;
+}
+
+/* ======================================================
+   Vocabulary Page
+====================================================== */
+
+.vocabulary-app {
+
+    max-width: 800px;
+    margin: 40px auto 0;
+    text-align: center;
+}
+
+.topic-control {
+
+    text-align: center;
+    margin: 40px auto 30px;
+}
+
+.topic-control label {
+
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#topicSelect {
+
+    min-width: 220px;
+
+    padding: 10px 18px;
+
+    border-radius: 999px;
+
+    border: 2px solid #5EA39A;
+
+    background: white;
+
+    font-size: 1rem;
+
+    color: #1F3550;
+}
+
+.word-card,
+.quiz-section,
+.stats-section {
+    background: white;
+    max-width: 760px;
+    width: 100%;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.08);
+    box-sizing: border-box;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* ======================================================
+   Word Card
+====================================================== */
+
+.card {
+
+    transition: .3s;
+}
+
+.card:hover {
+
+    transform: translateY(-4px);
+}
+
+.fade {
+
+    opacity: 0;
+}
+
+#word {
+
+    font-size: 2rem;
+    color: #1F3550;
+    margin-bottom: 15px;
+}
+
+#pronunciation {
+
+    color: #666;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+#definition {
+
+    max-width: 560px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.example-box {
+
+    background: #F7F9F9;
+    border-left: 4px solid #5EA39A;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 560px;
+    text-align: left;
+}
+
+.word-lists {
+
+    max-width: 560px;
+    margin: 25px auto 0;
+    text-align: left;
+}
+
+.word-lists p {
+
+    margin: 8px 0;
+}
+
+/* ======================================================
+   Quiz
+====================================================== */
+
+#quizQuestion {
+
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+#quizOptions {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+#quizOptions button {
+
+    display: block;
+
+    width: 100%;
+
+    margin: 12px 0;
+}
+
+#quizOptions button.correct {
+
+    background: #4CAF50;
+}
+
+#quizOptions button.incorrect {
+
+    background: #D9534F;
+}
+
+#quizFeedback {
+
+    margin-top: 20px;
+
+    font-weight: bold;
+}
+
+/* ======================================================
+   Statistics
+====================================================== */
+
+.stats-section p {
+
+    margin: 12px 0;
+
+    font-size: 1.05rem;
+}
+
+/* ======================================================
+   Responsive
+====================================================== */
+
+@media (max-width:700px) {
+
     .activity-grid {
         grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero-logo {
+        max-width: 420px;
+    }
+
+    .word-card,
+    .quiz-section,
+    .stats-section {
+        padding: 25px;
     }
 }

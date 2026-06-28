@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+```
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vocabulary | MLJ Interactive Learning Suite</title>
+
+<link rel="stylesheet" href="css/style.css">
+```
+
+</head>
+
+<body>
+
+```
+<div class="container">
+
+    <section class="hero">
+        <img 
+            src="images/mlj-bridge.png" 
+            alt="My Language Journey bridge logo" 
+            class="hero-logo"
+        >
+
+        <h1>Vocabulary Practice</h1>
+
+        <p class="hero-text">
+            Practise useful English vocabulary with examples, quizzes and learning statistics.
+        </p>
+
+        <a href="index.html" class="button-link">← Back to Home</a>
+    </section>
+
+    <section class="vocabulary-app">
+
+        <div class="topic-control">
+            <label for="topicSelect">Vocabulary Topic</label>
+
+            <select id="topicSelect"></select>
+        </div>
+
+        <section class="word-card">
+
+            <h2>Word of the Moment</h2>
+
+            <div class="card">
+                <h3 id="word">Loading...</h3>
+
+                <p id="pronunciation"></p>
+
+                <p id="wordMeta"></p>
+
+                <p id="definition"></p>
+
+                <div class="example-box">
+                    <h4>Example</h4>
+                    <p id="example"></p>
+                </div>
+
+                <div class="word-lists">
+                    <p>
+                        <strong>Synonyms:</strong>
+                        <span id="synonyms"></span>
+                    </p>
+
+                    <p>
+                        <strong>Antonyms:</strong>
+                        <span id="antonyms"></span>
+                    </p>
+                </div>
+
+                <button id="nextWord">Next Word</button>
+            </div>
+
+        </section>
+
+        <section class="quiz-section">
+
+            <h2>Quick Quiz</h2>
+
+            <p id="quizQuestion">Question will appear here.</p>
+
+            <div id="quizOptions"></div>
+
+            <p id="quizFeedback"></p>
+
+            <button id="newQuestion">New Question</button>
+
+        </section>
+
+        <section class="stats-section">
+
+            <h2>Learning Statistics</h2>
+
+            <p>Words viewed: <span id="wordsViewed">0</span></p>
+
+            <p>Correct answers: <span id="correctAnswers">0</span></p>
+
+            <p>Incorrect answers: <span id="incorrectAnswers">0</span></p>
+
+            <p>Accuracy: <span id="accuracy">0%</span></p>
+
+            <button id="reset-stats-button">Reset Stats</button>
+
+        </section>
+
+    </section>
+
+</div>
+
+<script src="js/ui.js"></script>
+<script src="js/stats.js"></script>
+<script src="js/vocabulary.js"></script>
+<script src="js/quiz.js"></script>
+```
+
+</body>
+
+</html>
