@@ -261,6 +261,7 @@ button:disabled {
 
 .word-card,
 .quiz-section,
+.matching-section,
 .stats-section {
     background: white;
     max-width: 760px;
@@ -407,6 +408,12 @@ button:disabled {
 }
 
 /* ======================================================
+   Matching Game
+====================================================== */
+
+
+
+/* ======================================================
    Statistics
 ====================================================== */
 
@@ -437,6 +444,7 @@ button:disabled {
 
     .word-card,
     .quiz-section,
+    .matching-section,
     .stats-section {
         padding: 25px;
     }
