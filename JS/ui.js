@@ -7,3 +7,23 @@ function displayWord(wordData) {
     synonymsElement.textContent = wordData.synonyms.join(", ");
     antonymsElement.textContent = wordData.antonyms.join(", ");
 }
+
+document.addEventListener("keydown", function (event) {
+    if (event.code === "Space") {
+        event.preventDefault();
+
+        const nextWordButton = document.getElementById("nextWord");
+
+        if (nextWordButton) {
+            nextWordButton.click();
+        }
+    }
+
+    if (event.code === "Enter") {
+        const newQuestionButton = document.getElementById("newQuestion");
+
+        if (newQuestionButton) {
+            newQuestionButton.click();
+        }
+    }
+});
