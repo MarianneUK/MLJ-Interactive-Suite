@@ -196,6 +196,33 @@ button:disabled {
     text-align: center;
 }
 
+.vocabulary-activity-menu {
+    max-width: 760px;
+    margin: 40px auto 20px;
+    text-align: center;
+}
+
+.mini-activity-grid {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mini-activity {
+    background: white;
+    color: #1F3550;
+    border: 2px solid #5EA39A;
+    border-radius: 999px;
+    padding: 14px 24px;
+    font-weight: bold;
+}
+
+.mini-activity.active {
+    background: #5EA39A;
+    color: white;
+}
+
 .topic-control {
     display: flex;
     flex-direction: column;
