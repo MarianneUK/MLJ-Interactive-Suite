@@ -454,8 +454,10 @@ button:disabled {
     font-weight: 500;
 }
 
-.matching-item:hover {
+.matching-item:not(.disabled):not(.wrong):hover {
     background: white;
+    color: #1F3550;
+    border-color: #1F3550;
     transform: translateY(-3px);
     box-shadow: 0 8px 18px rgba(31,53,80,.15);
 }
@@ -485,6 +487,17 @@ button:disabled {
     background: #D9534F;
     color: white;
     border-color: #D9534F;
+}
+
+.matching-item.disabled {
+
+    pointer-events: none;
+
+    cursor: default;
+
+    transform: none !important;
+
+    box-shadow: none !important;
 }
 
 #matchingFeedback {

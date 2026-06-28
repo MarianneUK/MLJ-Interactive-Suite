@@ -9,13 +9,15 @@ function shuffle(array) {
 }
 
 function generateMatchingGame() {
+
     matchingGameElement.innerHTML = "";
 
     selectedWordCard = null;
     selectedDefinitionCard = null;
 
     if (words.length < 4) {
-        matchingGameElement.innerHTML = "<p>Not enough words to create a matching game.</p>";
+        matchingGameElement.innerHTML =
+            "<p>Not enough words to create a matching game.</p>";
         return;
     }
 
@@ -30,11 +32,13 @@ function generateMatchingGame() {
     `;
 
     selectedWords.forEach(function (word) {
+
         html += `
             <div class="matching-item matching-word" data-id="${word.id}">
                 ${word.word}
             </div>
         `;
+
     });
 
     html += `
@@ -45,11 +49,13 @@ function generateMatchingGame() {
     `;
 
     shuffledDefinitions.forEach(function (word) {
+
         html += `
             <div class="matching-item matching-definition" data-id="${word.id}">
                 ${word.definition}
             </div>
         `;
+
     });
 
     html += `
@@ -66,11 +72,14 @@ function generateMatchingGame() {
 }
 
 function addMatchingClickEvents() {
+
     const wordCards = document.querySelectorAll(".matching-word");
     const definitionCards = document.querySelectorAll(".matching-definition");
 
     wordCards.forEach(function (card) {
+
         card.addEventListener("click", function () {
+
             wordCards.forEach(function (wordCard) {
                 wordCard.classList.remove("selected");
             });
@@ -79,11 +88,15 @@ function addMatchingClickEvents() {
             card.classList.add("selected");
 
             checkMatch();
+
         });
+
     });
 
     definitionCards.forEach(function (card) {
+
         card.addEventListener("click", function () {
+
             definitionCards.forEach(function (definitionCard) {
                 definitionCard.classList.remove("selected");
             });
@@ -92,11 +105,15 @@ function addMatchingClickEvents() {
             card.classList.add("selected");
 
             checkMatch();
+
         });
+
     });
+
 }
 
 function checkMatch() {
+
     if (!selectedWordCard || !selectedDefinitionCard) {
         return;
     }
@@ -104,30 +121,54 @@ function checkMatch() {
     const feedback = document.getElementById("matchingFeedback");
 
     if (selectedWordCard.dataset.id === selectedDefinitionCard.dataset.id) {
+
+        correctMatches++;
+        updateStatistics();
+
         selectedWordCard.classList.add("matched");
         selectedDefinitionCard.classList.add("matched");
+
+        selectedWordCard.classList.add("disabled");
+        selectedDefinitionCard.classList.add("disabled");
 
         selectedWordCard.classList.remove("selected");
         selectedDefinitionCard.classList.remove("selected");
 
-        feedback.textContent = "Correct match!";
+        feedback.textContent = "✅ Correct!";
 
         selectedWordCard = null;
         selectedDefinitionCard = null;
+
+        // Check if every tile has been matched
+
+        const remaining = document.querySelectorAll(".matching-item:not(.matched)");
+
+        if (remaining.length === 0) {
+            feedback.textContent = "🎉 Excellent! You matched all four words correctly!";
+        }
+
     } else {
+
+        incorrectMatches++;
+        updateStatistics();
+
         selectedWordCard.classList.add("wrong");
         selectedDefinitionCard.classList.add("wrong");
 
         feedback.textContent = "Not quite. Try again.";
 
         setTimeout(function () {
+
             selectedWordCard.classList.remove("selected", "wrong");
             selectedDefinitionCard.classList.remove("selected", "wrong");
 
             selectedWordCard = null;
             selectedDefinitionCard = null;
+
         }, 700);
+
     }
+
 }
 
 newMatchingGameButton.addEventListener("click", generateMatchingGame);
