@@ -89,16 +89,30 @@ Goals:
 
 ---
 
-# Version 0.4 — Vocabulary Tools
+# Version 0.4 — Vocabulary Tools ✅
 
-Goals:
+Completed
 
-* Flashcards
-* Multiple choice quizzes
+* Animated flashcards
+* Multiple-choice quiz
+* Learning statistics
+* Playable matching game
+* Topic selector
+* Vocabulary activity menu
+* Local progress saving
+
+Next additions
+
+* Pronunciation button
+* Listening mode
 * Synonym game
 * Antonym game
 * Gap-fill exercises
 * Spelling practice
+
+Status:
+
+**In Progress**
 
 ---
 
@@ -158,7 +172,6 @@ Goals:
 * Progress tracking
 * Revision lists
 * Daily challenge
-* Learning statistics
 
 ---
 
