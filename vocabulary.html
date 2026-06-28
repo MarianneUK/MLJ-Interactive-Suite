@@ -121,19 +121,33 @@
 
         <section class="stats-section">
 
-            <h2>Learning Statistics</h2>
+            <<h2>Learning Statistics</h2>
 
-            <p>Words viewed: <span id="wordsViewed">0</span></p>
+            <div class="stats-grid">
 
-            <p>Correct answers: <span id="correctAnswers">0</span></p>
+                <div class="stat-box">
+                    <h3>📖 Words</h3>
+                    <p><span id="wordsViewed">0</span> viewed</p>
+                </div>
 
-            <p>Incorrect answers: <span id="incorrectAnswers">0</span></p>
+                <div class="stat-box">
+                    <h3>🧠 Quiz</h3>
+                    <p>✅ <span id="correctAnswers">0</span> correct</p>
+                    <p>❌ <span id="incorrectAnswers">0</span> incorrect</p>
+                </div>
 
-            <p>Correct matches: <span id="correctMatches">0</span></p>
+                <div class="stat-box">
+                    <h3>🧩 Matching</h3>
+                    <p>✅ <span id="correctMatches">0</span> correct</p>
+                    <p>❌ <span id="incorrectMatches">0</span> incorrect</p>
+                </div>
 
-            <p>Incorrect matches: <span id="incorrectMatches">0</span></p>
+                <div class="stat-box">
+                    <h3>🎯 Overall</h3>
+                    <p><span id="accuracy">0%</span> accuracy</p>
+                </div>
 
-            <p>Accuracy: <span id="accuracy">0%</span></p>
+            </div>
 
             <button id="reset-stats-button">Reset Stats</button>
 
