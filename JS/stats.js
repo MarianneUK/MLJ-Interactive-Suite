@@ -15,6 +15,9 @@ const incorrectMatchesElement = document.getElementById("incorrectMatches");
 const accuracyElement = document.getElementById("accuracy");
 const resetStatsButton = document.getElementById("reset-stats-button");
 
+const progressTextElement = document.getElementById("progressText");
+const progressFillElement = document.getElementById("progressFill");
+
 function updateStatistics() {
     localStorage.setItem("wordsViewed", wordsViewed);
     localStorage.setItem("correctAnswers", correctAnswers);
@@ -44,6 +47,16 @@ function updateStatistics() {
     } else {
         const accuracy = Math.round((totalCorrect / totalAnswers) * 100);
         accuracyElement.textContent = accuracy + "%";
+    }
+
+    if (words && words.length > 0) {
+        const progress = Math.min(wordsViewed, words.length);
+        const percentage = Math.round((progress / words.length) * 100);
+
+        progressTextElement.textContent =
+            `Progress: ${progress} / ${words.length} words`;
+
+        progressFillElement.style.width = percentage + "%";
     }
 }
 
