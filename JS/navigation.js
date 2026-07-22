@@ -8,6 +8,8 @@ const matchingSection = document.getElementById("matchingSection");
 
 function showActivity(activity) {
 
+    localStorage.setItem("selectedActivity", activity);
+
     flashcardsSection.style.display = "none";
     quizSection.style.display = "none";
     matchingSection.style.display = "none";
@@ -51,4 +53,7 @@ matchingButton.addEventListener("click", function () {
     showActivity("matching");
 });
 
-showActivity("flashcards");
+const savedActivity =
+    localStorage.getItem("selectedActivity") || "flashcards";
+
+showActivity(savedActivity);

@@ -230,9 +230,9 @@ button:disabled {
 }
 
 .mini-activity.active:hover {
-
     background: #5EA39A;
     color: white;
+    transform: none;
 }
 
 .topic-control {
