@@ -35,15 +35,15 @@
 
     <section class="vocabulary-activity-menu">
 
-        <h2>Choose an Activity</h2>
+        <h2>Learning Activities</h2>
 
         <div class="mini-activity-grid">
 
-            <button class="mini-activity active">📖 Flashcards</button>
+            <button id="flashcardsButton" class="mini-activity active">📖 Flashcards</button>
 
-            <button class="mini-activity active">🧠 Quick Quiz</button>
+            <button id="quizButton" class="mini-activity">🧠 Quick Quiz</button>
 
-            <button class="mini-activity">🧩 Matching Game</button>
+            <button id="matchingButton" class="mini-activity">🧩 Matching Game</button>
 
         </div>
 
@@ -64,7 +64,7 @@
             </div>
         </div>
 
-        <section class="word-card">
+        <section id="flashcardsSection" class="word-card">
 
             <h2>Word of the Moment</h2>
 
@@ -100,7 +100,7 @@
 
         </section>
 
-        <section class="quiz-section">
+        <section id="quizSection" class="quiz-section">
 
             <h2>Quick Quiz</h2>
 
@@ -114,7 +114,7 @@
 
         </section>
 
-        <section class="matching-section">
+        <section id="matchingSection" class="matching-section">
 
             <h2>🧩 Matching Game</h2>
 
@@ -170,6 +170,7 @@
 <script src="js/quiz.js"></script>
 <script src="js/matching.js"></script>
 <script src="js/speech.js"></script>
+<script src="js/navigation.js"></script>
 
 </body>
 

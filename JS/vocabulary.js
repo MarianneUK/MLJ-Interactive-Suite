@@ -34,6 +34,9 @@ function loadVocabulary(topic) {
 
             wordsViewed++;
             updateStatistics();
+            if (wordsViewed >= words.length) {
+                alert("🎉 Congratulations! You've viewed every word in this topic.");
+            }
 
             generateQuiz();
             generateMatchingGame();

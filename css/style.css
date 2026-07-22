@@ -223,6 +223,18 @@ button:disabled {
     color: white;
 }
 
+.mini-activity:hover {
+
+    background: #5EA39A;
+    color: white;
+}
+
+.mini-activity.active:hover {
+
+    background: #5EA39A;
+    color: white;
+}
+
 .topic-control {
     display: flex;
     flex-direction: column;
