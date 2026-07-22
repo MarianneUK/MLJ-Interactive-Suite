@@ -111,8 +111,7 @@ Next additions
 * Spelling practice
 
 Status:
-
-**In Progress**
+Vocabulary Hub - ✅ Complete
 
 ---
 

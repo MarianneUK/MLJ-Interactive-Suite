@@ -26,9 +26,9 @@ body {
 
 .hero {
     background: white;
-    max-width: 620px;
+    max-width: 500px;
     margin: 0 auto;
-    padding: 40px;
+    padding: 20px;
     border-radius: 16px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,.08);
@@ -38,20 +38,22 @@ body {
 .hero-logo {
     display: block;
     width: 100%;
-    max-width: 550px;
+    max-width: 200px;
     height: auto;
-    margin: 0 auto 24px;
+    margin: 0 auto 10px;
 }
 
-h1 {
-    color: #5EA39A;
+.hero h1 {
+    color: #1F3550;
+    font-size: 1.8rem;
     margin-bottom: 12px;
 }
 
 .hero-text {
-    max-width: 700px;
+    max-width: 430px;
+    font-size: .95rem;
     margin: 20px auto 0;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .eyebrow {
@@ -69,14 +71,14 @@ h1 {
 .activity-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-top: 50px;
+    gap: 18px;
+    margin-top: 24px;
 }
 
 .activity-card {
     background: white;
     border-radius: 18px;
-    padding: 30px;
+    padding: 22px;
     box-shadow: 0 10px 30px rgba(31,53,80,.08);
 }
 
@@ -145,6 +147,11 @@ button,
     cursor: pointer;
 
     transition: .25s;
+}
+
+.activity-card button,
+.activity-card .button-link {
+    margin-top: 12px;
 }
 
 button:hover,
