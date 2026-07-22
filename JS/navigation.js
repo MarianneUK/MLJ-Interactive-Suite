@@ -14,31 +14,37 @@ function showActivity(activity) {
     quizSection.style.display = "none";
     matchingSection.style.display = "none";
 
+    flashcardsSection.classList.remove("visible");
+    quizSection.classList.remove("visible");
+    matchingSection.classList.remove("visible");
+
     flashcardsButton.classList.remove("active");
     quizButton.classList.remove("active");
     matchingButton.classList.remove("active");
 
+    let selectedSection;
+
     if (activity === "flashcards") {
-
-        flashcardsSection.style.display = "block";
+        selectedSection = flashcardsSection;
         flashcardsButton.classList.add("active");
-
     }
 
     if (activity === "quiz") {
-
-        quizSection.style.display = "block";
+        selectedSection = quizSection;
         quizButton.classList.add("active");
-
     }
 
     if (activity === "matching") {
-
-        matchingSection.style.display = "block";
+        selectedSection = matchingSection;
         matchingButton.classList.add("active");
-
     }
 
+    selectedSection.style.display = "block";
+
+    // Force browser repaint
+    selectedSection.offsetHeight;
+
+    selectedSection.classList.add("visible");
 }
 
 flashcardsButton.addEventListener("click", function () {

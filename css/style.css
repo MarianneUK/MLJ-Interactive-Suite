@@ -189,6 +189,19 @@ button:disabled {
    Vocabulary Page
 ====================================================== */
 
+.activity-panel {
+    opacity: 0;
+    transform: translateY(10px);
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+.activity-panel.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .vocabulary-app {
 
     max-width: 800px;
